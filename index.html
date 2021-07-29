@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, Projects, stock, profit, loss, profit and loss"
+    />
+    <meta name="description" content="Web Development Projects" />
+    <meta name="author" content="Sobhan Dash" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Stocks: Profit/Loss</title>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="./assets/bg1.jpg"
+        class="img-desktop"
+        id="img-desktop-default"
+      />
+      <img
+        src="./assets/happytheme.jpg"
+        class="img-desktop hidden"
+        id="img-desktop-happy"
+      />
+      <img
+        src="./assets/sadtheme.jpg"
+        class="img-desktop hidden"
+        id="img-desktop-sad"
+      />
+      <div class="content">
+        <h1>Check <i>Profit or Loss</i> status of Stocks</h1>
+        <hr />
+        <form name="checkform">
+          <label
+            >Purchase Price (₹)
+            <input
+              class="input"
+              id="purchase-price"
+              type="number"
+              min="0"
+              step="0.01"
+              placeholder="Enter Cost Price of Stock"
+              required
+              oninput="validity.valid||(value='');"
+          /></label>
+          <label
+            >Purchase Quantity
+            <input
+              class="input"
+              id="purchase-qty"
+              type="number"
+              min="1"
+              placeholder="Enter Quantity of Stock"
+              required
+              oninput="validity.valid||(value='');"
+          /></label>
+          <label
+            >Current Price (₹)
+            <input
+              class="input"
+              id="current-price"
+              type="number"
+              min="0"
+              step="0.01"
+              placeholder="Enter Current Price of Stock"
+              required
+              oninput="validity.valid||(value='');"
+          /></label>
+          <button class="btn-check" type="submit">Check Status</button>
+        </form>
+        <div class="output">
+          <div id="outputMsg"></div>
+        </div>
+        <span class="social-icons">
+          <a
+            href="https://sobhan-dash.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+            ><img
+              class="social-media"
+              src="./assets/user.svg"
+              width="30"
+              alt="Portfolio"
+          /></a>
+          <a
+            href="https://github.com/SobhanDash/"
+            target="_blank"
+            rel="noreferrer"
+            ><img
+              class="social-media"
+              src="./assets/github.svg"
+              width="30"
+              alt="Github"
+          /></a>
+          <a
+            href="https://twitter.com/Neo_kaizerr"
+            target="_blank"
+            rel="noreferrer"
+            ><img
+              class="social-media"
+              src="./assets/twitter.svg"
+              width="30"
+              alt="Twitter"
+          /></a>
+        </span>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
